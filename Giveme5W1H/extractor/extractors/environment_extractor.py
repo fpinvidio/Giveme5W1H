@@ -64,7 +64,7 @@ class EnvironmentExtractor(AbsExtractor):
         self.time_delta = time_range  # 24h in seconds
 
         self._phrase_range_location = phrase_range_location
-        self._cache_nominatim = CacheManager.instance().get_cache('../examples/caches/Nominatim')
+        self._cache_nominatim = CacheManager.instance().get_cache('../caches/Nominatim')
 
         self._skip_when = skip_when
         self._skip_where = skip_where
